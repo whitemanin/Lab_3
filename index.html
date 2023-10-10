@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій інтернет-магазин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Інтернет-магазин</h1>
+    <!-- Кнопка для показу корзини -->
+    <button id="show-cart-popup">Корзина</button>
+</header>
+
+<main>
+    <section class="products">
+        <h2>Список товарів</h2>
+        <ul id="product-list">
+            <!-- Тут будуть товари -->
+        </ul>
+    </section>
+</main>
+
+
+
+<!-- Popup для корзини -->
+<div id="cart-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" id="close-cart-popup">&times;</span>
+        <h2>Корзина</h2>
+        <ul id="cart-list-popup">
+            <!-- Тут буде корзина -->
+        </ul>
+        <p>Загальна вартість: <span id="total-price-popup">0</span> грн</p>
+        <button id="clear-cart-popup">Очистити корзину</button>
+        <button id="checkout">Перейти до оплати</button>
+        <button id="back-to-home">Назад на головну сторінку</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
